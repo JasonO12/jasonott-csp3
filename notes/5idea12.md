@@ -16,7 +16,13 @@
 
 ### 1.
 
+- To empower yourself in the digital world, one must be willing to use technology in useful, innovative ways. Utilizing their skills to solve problems and benefit others is a great example of what makes someone empowered. Being empowered in the digital world also requires someone to have access to technology and internet services, and due to the digital divide, not everyone does. 
+
 ### 2.
+
+- An empowered person can help a non-empowered person by helping them solve problems that they would not normally be able to address. At DNHS, something I could do is build a website that benefits a group of people that may not be able to create one themselves.
+
+### 3.
 
 
 
