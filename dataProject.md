@@ -13,7 +13,7 @@
 
 ### Code
 
-#### Swap Code
+<!-- #### Swap Code
 ``` python
 def swapNum(num1, num2):
     if int(num1) > int(num2):
@@ -27,7 +27,7 @@ def test_swapNum():
     num2 = input("Input age 2: ")
     num1, num2 = swapNum(num1, num2)
     print("Swapped:", num1, num2)
-```
+``` -->
 #### Pattern Code
 ``` python
 def pattern_print(position):
@@ -72,7 +72,7 @@ def treefunc():
   height = int(input("Enter height: "))
   build_tree(height)
 ```
-#### Keypad Code
+<!-- #### Keypad Code
 ``` python
 def format(matrix):
     rows = len(matrix)
@@ -88,7 +88,7 @@ def format_tester():
     format(matrix)
     matrix2 = [ [1,2,3],[4,5,6],[7,8,9],[10,11,12] ]
     format(matrix2)
-```
+``` -->
 ### Menus Code
 ``` python
 main_menu = [
