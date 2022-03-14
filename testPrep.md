@@ -1,4 +1,4 @@
-{% include navigationalbartender.html %}
+{% include navbar.html %}
 
 # Notes for CollegeBoard Big Ideas
 
