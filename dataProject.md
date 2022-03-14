@@ -7,6 +7,10 @@
 
 ### GitHub
 
+- [Pattern Issue](https://github.com/JasonO12/jasonott-csp3/issues/1)
+- [Menu Issue](https://github.com/JasonO12/jasonott-csp3/issues/3)
+- [Tree Issue](https://github.com/JasonO12/jasonott-csp3/issues/2)
+
 ### Replit
 
 - [Link to Python Menu](https://replit.com/@JasonOtt1/jasonott-csp3#python/menu.py)
