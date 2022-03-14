@@ -24,7 +24,7 @@
 
 ### 3.
 
-- I think paper and red tape 
+- I think paper and red tape does contribute to blocking digital empowerment. At Del Norte, for example, certain websites are blocked by the school wifi ("red tape"). This blocks potentially useful sites, which could prevent certain classes from being digitally empowered. Paper is also used in some of my classes mainly, which prevents the classes from advancing technologically and becoming digitally empowered. 
 
 
 
