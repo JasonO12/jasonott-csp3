@@ -1,4 +1,4 @@
-{% include navigationalbartender.html %}
+{% include navbar.html %}
 
 ## 5.1 Actions
 
