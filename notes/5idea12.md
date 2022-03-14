@@ -24,7 +24,21 @@
 
 ### 3.
 
-- I think paper and red tape 
+- I think paper and red tape does contribute to blocking digital empowerment. At Del Norte, for example, certain websites are blocked by the school wifi ("red tape"). This blocks potentially useful sites, which could prevent certain classes from being digitally empowered. Paper is also used in some of my classes mainly, which prevents the classes from advancing technologically and becoming digitally empowered. 
+
+
+## 5.1 Notes
+- Flow charts
+   - Flow charts and UML diagrams go with the different coding styles
+   - Flow charts can be used to illustrate procedures, conditionals, and return values. It represents the entire code sequence.
+   - Flow charts are a healthy substitution for wireframing; good for team planning.
+- UML diagrams
+   - Relate to the data of a program
+   - Unified Modeling Language (UML)
+   - Visualizes the design of a system
+
+## 5.2 Notes
+ 
 
 
 
