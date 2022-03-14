@@ -21,5 +21,7 @@ Repository for Jason Ott Tri 3
 
 ### Time Box
 
+
+- [Week 0 Review Ticket](https://github.com/JasonO12/jasonott-csp3/issues/4)
 - [TT0 - Python Menu](https://replit.com/@JasonOtt1/jasonott-csp3#python/menu.py) 
 - [5.1-5.2 Notes](https://jasono12.github.io/jasonott-csp3/notes/5idea12)
