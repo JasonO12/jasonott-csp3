@@ -4,28 +4,27 @@ import time
 ANSI_CLEAR_SCREEN = u"\u001B[2J"
 ANSI_HOME_CURSOR = u"\u001B[0;0H\u001B[2"
 OCEAN_COLOR = u"\u001B[44m\u001B[2D"
-FIRE_COLOR = u"\u001B[31m\u001B[2D"
-CANDLE_COLOR = u"\u001B[0m\u001B[2D"
+AMOGUS_COLOR = u"\u001B[31m\u001B[2D"
+NON_COLOR = u"\u001B[0m\u001B[2D"
 
 # print ship with colors and leading spaces
 
 
 def pattern_print(position):
     print(ANSI_HOME_CURSOR)
-    print(CANDLE_COLOR)
     sp = " " * position
-    print(FIRE_COLOR)
-    print(sp + "    (   ")
-    print(sp + "    )\   ")
-    print(sp + "    {_}   ")
-    print(CANDLE_COLOR, end="")
-    print(sp + "   .-;-.   ")
-    print(sp + "  |'-=-'| ")
-    print(sp + "  |     | ")
-    print(sp + "  |     | ")
-    print(sp + "  |     | ")
-    print(sp + "  '.___.' ")
+    print(AMOGUS_COLOR)
+    print(sp + "    .-----. ")
+    print(sp + "  /|    ___|")
+    print(sp + " | |   (____)")
+    print(sp + " | |       |  ")
+    print(sp + "  \|       | ")
+    print(sp + "   |  .-.  | ")
+    print(sp + "   |  | |  | ")
+    print(sp + "   |__| |__| ")
+    print(NON_COLOR)
 
+  
 # Pattern function, interface into this file
 def patternfunc():
 
