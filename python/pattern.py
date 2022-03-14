@@ -14,14 +14,14 @@ def pattern_print(position):
     print(ANSI_HOME_CURSOR)
     sp = " " * position
     print(AMOGUS_COLOR)
-    print(sp + "    .-----. ")
-    print(sp + "  /|    ___|")
-    print(sp + " | |   (____)")
+    print(sp + "    .-----.   ")
+    print(sp + "  /|    ___|  ")
+    print(sp + " | |   (____) ")
     print(sp + " | |       |  ")
-    print(sp + "  \|       | ")
-    print(sp + "   |  .-.  | ")
-    print(sp + "   |  | |  | ")
-    print(sp + "   |__| |__| ")
+    print(sp + "  \|       |  ")
+    print(sp + "   |  .-.  |  ")
+    print(sp + "   |  | |  |  ")
+    print(sp + "   |__| |__|  ")
     print(NON_COLOR)
 
   
