@@ -1,14 +1,16 @@
+{% include navbar.html %}
+
 # jasonott-csp3
 Repository for Jason Ott Tri 3
 
-<table>
+<!-- <table>
     <tr>
         <td><a href="https://JasonO12.github.io/jasonott-csp3/">Home</a></td>
         <td><a href="https://JasonO12.github.io/jasonott-csp3/dataProject">Data Structures Project</a></td>
         <td><a href="https://JasonO12.github.io/jasonott-csp3/testPrep">Test Prep</a></td>
         <td><a href="https://JasonO12.github.io/jasonott-csp3/createTask">Create Task</a></td>
     </tr>
-</table>
+</table> -->
 
 ## Jason Ott's Important Links
 
