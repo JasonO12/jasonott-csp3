@@ -4,6 +4,7 @@
 import keypad
 import swap
 import pattern
+import tree
 
 
 # Main list of [Prompts, Actions]
@@ -12,7 +13,8 @@ import pattern
 # 2. function references will be executed directly file.function()
 main_menu = [
     ["Swap", swap.test_swapNum],
-    ["Keypad", keypad.format_tester]
+    ["Keypad", keypad.format_tester],
+    ["Tree", tree.treefunc]
 ]
 
 # Submenu list of [Prompt, Action]
@@ -35,7 +37,7 @@ banner = f"\n{border}\nPlease Select An Option\n{border}"
 def menu():
     title = "Function Menu" + banner
     menu_list = main_menu.copy()
-    menu_list.append(["pattern", patterns_submenu])
+    menu_list.append(["Pattern", patterns_submenu])
     buildMenu(title, menu_list)
 
 # def submenu
