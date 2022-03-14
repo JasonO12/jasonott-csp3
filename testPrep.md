@@ -4,7 +4,7 @@
 
 ## Week 0
 
-- [5.1 - 5.2 Notes + Actions](https://Jason012.github.io/jasonott-csp3/notes/5idea12)
+- [5.1 - 5.2 Notes + Actions](https://JasonO12.github.io/jasonott-csp3/notes/5idea12)
 
 ## Week 1
 
