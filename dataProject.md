@@ -13,7 +13,7 @@
 
 ### Replit
 
-- [Link to Python Menu](https://replit.com/@JasonOtt1/jasonott-csp3#python/menu.py)
+{% inclulde replitembed.html %}
 
 ### Code
 
