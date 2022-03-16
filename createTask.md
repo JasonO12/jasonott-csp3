@@ -12,7 +12,7 @@ Marbles Game
 - Output will be marbles representing decided values
 - Sequencing in python file
 
-Game rules: you will play against a computer. Each player has 10 'marbles' to start with. You choose a number of marbles to risk, the computer randomly chooses a number to risk. You input whether you think the computer selected an even or odd number of 'marbles'. If you are correct, you get their marbles, if not, they get yours. You and the computer alternate turns. First to 20 marbles wins.
+Game rules: you will play against a computer. Each player has 10 'marbles' to start with. You choose a number of marbles to risk, the computer randomly chooses a number to risk. You input whether you think the computer selected an even or odd number of 'marbles'. If you are correct, you get their marbles, if not, they get yours. You and the computer alternate turns. First to 20 marbles wins. 
 
 ## Runtime
 
