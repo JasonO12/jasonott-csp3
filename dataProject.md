@@ -13,7 +13,7 @@
 
 ### Replit
 
-{% inclulde replitembed.html %}
+{% include replitembed.html %}
 
 ### Code
 
