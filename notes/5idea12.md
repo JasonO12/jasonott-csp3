@@ -1,4 +1,4 @@
-{% include navigationalbartender.html %}
+{% include navbar.html %}
 
 ## 5.1 Actions
 
@@ -36,8 +36,18 @@
    - Relate to the data of a program
    - Unified Modeling Language (UML)
    - Visualizes the design of a system
+- Computing
+   - People make computing innovations, which helps people find new ways to do things.
+   - There are beneficial and harmful effects of computing innovations, sometimes not anticipated.
+   - Programs can be used in unintentional ways.
+   - Computing innovations can harm society, the economy, or online culture.
+
 
 ## 5.2 Notes
+- Digital Divide
+   - Certain places around the world have limited/little access to technology that we are privileged to use here.
+   - Digital divide can affect all people
+   - Digital divide is impacted by governments, individuals, and companies.
  
 
 
