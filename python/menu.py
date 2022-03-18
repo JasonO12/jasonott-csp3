@@ -12,17 +12,25 @@ import tree
 # 1. file names will be run by exec(open("filename.py").read())
 # 2. function references will be executed directly file.function()
 main_menu = [
-    ["Swap", swap.test_swapNum],
-    ["Keypad", keypad.format_tester],
-    ["Tree", tree.treefunc]
 ]
 
 # Submenu list of [Prompt, Action]
 # Works similarly to main_menu
-patterns_sub_menu = [
+
+week0_sub_menu = [
+    ["Swap", swap.test_swapNum],
+    ["Keypad", keypad.format_tester],
     ["Pattern", pattern.patternfunc],
+    ["Tree", tree.treefunc]
 ]
 
+week1_sub_menu = [
+    
+]
+
+patterns_sub_menu = [
+    
+]
 
 # Menu banner is typically defined by menu owner
 border = "=" * 25
@@ -37,9 +45,10 @@ banner = f"\n{border}\nPlease Select An Option\n{border}"
 def menu():
     title = "Function Menu" + banner
     menu_list = main_menu.copy()
-    menu_list.append(["Pattern", patterns_submenu])
+    menu_list.append(["Week 0", week0_submenu])
+    # menu_list.append(["Pattern", patterns_submenu])
+    menu_list.append(["Week 1", week1_submenu])
     buildMenu(title, menu_list)
-
 # def submenu
 # using sub menu list above:
 # sub_menu works similarly to menu()
@@ -48,6 +57,15 @@ def menu():
 def patterns_submenu():
     title = "Function Submenu" + banner
     buildMenu(title, patterns_sub_menu)
+
+def week0_submenu():
+    title = "Week 0 Submenu" + banner
+    buildMenu(title, week0_sub_menu)
+
+def week1_submenu():
+    title = "Week 1 Submenu" + banner
+    buildMenu(title, week1_sub_menu)
+
 
 
 def buildMenu(banner, options):

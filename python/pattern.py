@@ -1,5 +1,5 @@
 import time
-
+import os
 # terminal print commands
 ANSI_CLEAR_SCREEN = u"\u001B[2J"
 ANSI_HOME_CURSOR = u"\u001B[0;0H\u001B[2"
@@ -37,6 +37,7 @@ def patternfunc():
     for position in range(start, distance, step):
         pattern_print(position)  # call to function with parameter
         time.sleep(.1)
+
 
 if __name__ == "__main__":
   patternfunc()
