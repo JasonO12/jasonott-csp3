@@ -12,9 +12,8 @@
 
 ### GitHub
 
-- []()
-- []()
-- []()
+- [Fibonacci Issue](https://github.com/JasonO12/jasonott-csp3/issues/5)
+- [InfoDB Issue](https://github.com/JasonO12/jasonott-csp3/issues/6)
 
 ### Code
 
