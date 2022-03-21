@@ -1,13 +1,21 @@
 def fibonacci(n):
-  if n == 0 or n == 1:
-    return 1
-  else:
-    return (fibonacci(n-1) + fibonacci(n-2))
-  
+  a = 1
+  print(a)
+  b = 1
+  print(b)
+  i = 2
+  while i < n:
+    k = b
+    b = a + b
+    a = k
+    print(b)
+    
+    i += 1
+  return
 
 def fibonacci_tester():
   n = int(input("Enter Value for Fibonoacci: "))
-  print("Term number", n, "in the fibonacci sequence is:", fibonacci(n))
+  fibonacci(n)
   
 
 
