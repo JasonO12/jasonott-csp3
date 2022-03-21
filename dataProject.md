@@ -3,6 +3,10 @@
 
 # Data Structures Project
 
+## Replit
+
+{% include replitembed.html %}
+
 ## Week 1
 
 ### GitHub
@@ -10,10 +14,6 @@
 - [Pattern Issue](https://github.com/JasonO12/jasonott-csp3/issues/1)
 - [Menu Issue](https://github.com/JasonO12/jasonott-csp3/issues/3)
 - [Tree Issue](https://github.com/JasonO12/jasonott-csp3/issues/2)
-
-### Replit
-
-{% include replitembed.html %}
 
 ### Code
 
