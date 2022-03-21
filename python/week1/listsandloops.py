@@ -6,36 +6,36 @@ InfoDb.append({
                "FirstName": "Jason",  
                "LastName": "Ott",  
                "Age": "16",     
-               "Past_Schools":["Del Sur Elementary","Monterey Ridge Elementary","Oak Valley Middle","Del Norte High"]  
+               "Schools":["Del Sur Elementary","Monterey Ridge Elementary","Oak Valley Middle","Del Norte High"]  
               })  
 
 InfoDb.append({  
                "FirstName": "Lucas",  
                "LastName": "Ho",  
                "Age": "16",     
-               "Past_Schools":["Monterey Ridge Elementary","Oak Valley Middle","Del Norte High"]  
+               "Schools":["Monterey Ridge Elementary","Oak Valley Middle","Del Norte High"]  
               })
 
 InfoDb.append({  
                "FirstName": "Everitt",  
                "LastName": "Cheng",  
                "Age": "16",     
-               "Past_Schools":["","Oak Valley Middle","Del Norte High"]  
+               "Schools":["PS203", "Black Mountain Middle","Oak Valley Middle","Del Norte High"]  
               })
 
 InfoDb.append({  
                "FirstName": "Daniel",  
                "LastName": "Tsivkovski",  
                "Age": "17",     
-               "Past_Schools":["","Oak Valley Middle","Del Norte High"]    
+               "Schools":["Stone Ranch Elementary","Oak Valley Middle","Del Norte High"]    
               })
 
 
 # given an index this will print InfoDb content
 def print_data(n):
     print(InfoDb[n]["FirstName"], InfoDb[n]["LastName"])  # using comma puts space between values
-    print("\t", "Cars: ", end="")  # \t is a tab indent, end="" make sure no return occurs
-    print(", ".join(InfoDb[n]["Owns_Cars"]))  # join allows printing a string list with separator
+    print("\t", "Attended Schools: ", end="")  # \t is a tab indent, end="" make sure no return occurs
+    print(", ".join(InfoDb[n]["Schools"]))  # join allows printing a string list with separator
     print()
 
 # Hack 2: InfoDB loops. Print values from the lists using three different ways: for, while, recursion
@@ -67,9 +67,9 @@ def recursive_loop(n):
 
 
 def tester():
-    print("For loop")
+    print("For loop: \n" + "-------------------")
     for_loop()
-    print("While loop")
+    print("While loop: \n" + "-------------------")
     while_loop(0)  # requires initial index to start while
-    print("Recursive loop")
+    print("Recursive loop \n" + "-------------------")
     recursive_loop(0)  # requires initial index to start recursion

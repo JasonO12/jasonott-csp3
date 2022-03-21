@@ -1,10 +1,13 @@
 # menu.py - function style menu
 # Imports typically listed at top
 # each import enables us to use logic that has been abstracted to other files and folders
-import keypad
-import swap
-import pattern
-import tree
+from week0 import keypad
+from week0 import swap
+from week0 import pattern
+from week0 import tree
+from week1 import listsandloops
+from week1 import fibonacci
+from week1 import factorial
 
 
 # Main list of [Prompts, Actions]
@@ -25,7 +28,9 @@ week0_sub_menu = [
 ]
 
 week1_sub_menu = [
-    
+    ["Lists", listsandloops.tester],
+    ["Fibonacci", fibonacci.fibonacci_tester],
+    ["Factorials", factorial.recur_tester]
 ]
 
 patterns_sub_menu = [
