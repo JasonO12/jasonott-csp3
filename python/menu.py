@@ -1,18 +1,9 @@
 # menu.py - function style menu
 # Imports typically listed at top
 # each import enables us to use logic that has been abstracted to other files and folders
-from week0 import keypad
-from week0 import swap
-from week0 import pattern
-from week0 import tree
-from week1 import listsandloops
-from week1 import fibonacci
-from week1 import factorial
-from week2 import oopfib
-from week2 import ooppalindrome
-from week2 import oopfact
-from week2 import oopgcd
-from week2 import impgcd
+from week0 import keypad, swap, pattern, tree
+from week1 import listsandloops, fibonacci, factorial
+from week2 import oopfib, ooppalindrome, oopfact, oopgcd, impgcd
 
 
 # Main list of [Prompts, Actions]
