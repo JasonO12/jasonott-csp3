@@ -8,6 +8,11 @@ from week0 import tree
 from week1 import listsandloops
 from week1 import fibonacci
 from week1 import factorial
+from week2 import oopfib
+from week2 import ooppalindrome
+from week2 import oopfact
+from week2 import oopgcd
+from week2 import impgcd
 
 
 # Main list of [Prompts, Actions]
@@ -20,17 +25,28 @@ main_menu = [
 # Submenu list of [Prompt, Action]
 # Works similarly to main_menu
 
-week0_sub_menu = [
+math_sub_menu = [
     ["Swap", swap.test_swapNum],
-    ["Keypad", keypad.format_tester],
-    ["Pattern", pattern.patternfunc],
-    ["Tree", tree.treefunc]
+    ["Fibonacci", fibonacci.fibonacci_tester],
+    ["Factorials", factorial.recur_tester],
+    ["IMP GCD", impgcd.gcd]
 ]
 
-week1_sub_menu = [
+data_sub_menu = [
     ["Lists", listsandloops.tester],
-    ["Fibonacci", fibonacci.fibonacci_tester],
-    ["Factorials", factorial.recur_tester]
+]
+
+visual_sub_menu = [
+    ["Keypad", keypad.format_tester],
+    ["Tree", tree.treefunc],
+    ["Pattern", pattern.patternfunc]
+]
+
+oop_sub_menu = [
+    ["OOP Palindrome", ooppalindrome.pali_tester],
+    ["OOP Fibonacci", oopfib.fib_tester],
+    ["OOP Factorial", oopfact.fact_tester],
+    ["OOP GCD", oopgcd.gcd_tester]
 ]
 
 patterns_sub_menu = [
@@ -50,9 +66,11 @@ banner = f"\n{border}\nPlease Select An Option\n{border}"
 def menu():
     title = "Function Menu" + banner
     menu_list = main_menu.copy()
-    menu_list.append(["Week 0", week0_submenu])
+    menu_list.append(["Math", math_submenu])
     # menu_list.append(["Pattern", patterns_submenu])
-    menu_list.append(["Week 1", week1_submenu])
+    menu_list.append(["Visual", visual_submenu])
+    menu_list.append(["Data", data_submenu])
+    menu_list.append(["OOP", oop_submenu])
     buildMenu(title, menu_list)
 # def submenu
 # using sub menu list above:
@@ -63,13 +81,21 @@ def patterns_submenu():
     title = "Function Submenu" + banner
     buildMenu(title, patterns_sub_menu)
 
-def week0_submenu():
-    title = "Week 0 Submenu" + banner
-    buildMenu(title, week0_sub_menu)
+def math_submenu():
+    title = "Math Submenu" + banner
+    buildMenu(title, math_sub_menu)
 
-def week1_submenu():
-    title = "Week 1 Submenu" + banner
-    buildMenu(title, week1_sub_menu)
+def visual_submenu():
+    title = "Visual Submenu" + banner
+    buildMenu(title, visual_sub_menu)
+
+def data_submenu():
+    title = "Data Submenu" + banner
+    buildMenu(title, data_sub_menu)
+
+def oop_submenu():
+    title = "OOP Submenu" + banner
+    buildMenu(title, oop_sub_menu)  
 
 
 
