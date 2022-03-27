@@ -14,7 +14,30 @@
 
 ## 5.6 Actions
 
-- 
+#### 1.
+
+- I have seen PII on my about me page on previous csp projects, like my name, age, facts about me, and a picture.
+
+#### 2.
+
+- I think we need to be careful when disclosing personal information online, because it could get into the wrong hands. But for things like social media, I think PII is a good thing because it makes it easier to get to know people. 
+
+#### 3.
+
+- Good passwords are usually unique codes that consist of numbers, letters, and maybe some symbols. Bad passwords could contain personal information about you, numbers representing your birthday or other meaningful things, and other personal information. Other steps that assist in authentication include verification emails that are sent containing a 6 digit code. 
+
+#### 4.
+
+- Symmetric encryption uses one key that is shared by multiple users looking to recieve information. Asymmetric encryption uses a public and private key when decrypting messages.
+
+#### 5.
+
+- In deployment, we used HTTPS to encrypt our website. This uses a TLS protocol to send HTTP data/files to the user that is encrypted data.
+
+#### 6.
+
+- One phishing technique I could have fallen for was entering my email into a public wifi service because I needed to connect to the internet temporarily. It has not come back to bite me yet, but that information could have been stored somewhere I didn't expect. Some other Phishing techniques could be baiting people using an input that looks like a similar, trusted program, like a fake pop up ad that looks like facebook, but is not in reality.
+
 
 ## 5.5 Notes
 
