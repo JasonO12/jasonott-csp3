@@ -2,6 +2,10 @@
 
 # Notes for CollegeBoard Big Ideas
 
+## Week 2
+
+- [5.5 - 5.6 Notes + Actions](https://JasonO12.github.io/jasonott-csp3/notes/5idea56)
+
 ## Week 1
 
 - [5.3 - 5.4 Notes + Actions](https://JasonO12.github.io/jasonott-csp3/notes/5idea34)
