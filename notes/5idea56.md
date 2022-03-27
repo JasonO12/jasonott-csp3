@@ -2,7 +2,15 @@
 
 ## 5.5 Actions
 
--  
+#### 1.
+
+- Creative Commons - Good for a project where you do not mind anyone using it any way they want
+- Open Source MIT - Good for a project where you can use code freely and distribute closed versions.
+- Open Source GPL - Good for project where people can use your code but they cannot distribute closed versions
+
+#### 2. 
+
+- We picked a MIT license because there is not much reason for anybody to distribute the poway CTE website and its code. Additionally, the only conditions to it are that we must disclose the license and copyright information when we distribute the website.
 
 ## 5.6 Actions
 
