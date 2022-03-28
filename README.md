@@ -25,7 +25,7 @@ Repository for Jason Ott Tri 3
 
 - [TT2 Classy Functions](https://replit.com/@JasonOtt1/jasonott-csp3#python/menu.py) 
 - [5.5-5.6 Notes](https://jasono12.github.io/jasonott-csp3/notes/5idea56)
-- 
+
 ### Week 1 - [Review Ticket](https://github.com/JasonO12/jasonott-csp3/issues/7)
 
 - [TT1 Lists and Loops](https://replit.com/@JasonOtt1/jasonott-csp3#python/menu.py) 
