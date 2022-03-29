@@ -1,7 +1,7 @@
 # menu.py - function style menu
 # Imports typically listed at top
 # each import enables us to use logic that has been abstracted to other files and folders
-from week0 import keypad, swap, pattern, tree
+from week0 import keypad, swap, pattern, tree, animation
 from week1 import listsandloops, fibonacci, factorial
 from week2 import oopfib, ooppalindrome, oopfact, oopgcd, impgcd
 
@@ -30,11 +30,12 @@ data_sub_menu = [
 visual_sub_menu = [
     ["Keypad", keypad.format_tester],
     ["Tree", tree.treefunc],
-    ["Pattern", pattern.patternfunc]
+    ["Pattern", pattern.patternfunc],
+    ["Animation", animation.ship]
 ]
 
 oop_sub_menu = [
-    ["OOP Palindrome", ooppalindrome.pali_tester],
+    ["OOP Palindrome", ooppalindrome.paltest],
     ["OOP Fibonacci", oopfib.fib_tester],
     ["OOP Factorial", oopfact.fact_tester],
     ["OOP GCD", oopgcd.gcd_tester]
