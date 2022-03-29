@@ -25,7 +25,7 @@ def ship_print(position):
     print(sp + "    |/   ")
     print(SHIP_COLOR, end="")
     print(sp + "\__ |__/ ")
-    print(sp + " #########  ")
+    print(sp + " \____/  ")
     print(RESET_COLOR)
 
 
