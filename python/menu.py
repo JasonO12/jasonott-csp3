@@ -35,7 +35,7 @@ visual_sub_menu = [
 ]
 
 oop_sub_menu = [
-    ["OOP Palindrome", ooppalindrome.paltest],
+    ["OOP Palindrome", ooppalindrome.pali_tester],
     ["OOP Fibonacci", oopfib.fib_tester],
     ["OOP Factorial", oopfact.fact_tester],
     ["OOP GCD", oopgcd.gcd_tester]
