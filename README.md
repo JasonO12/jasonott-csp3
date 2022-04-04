@@ -21,6 +21,10 @@ Repository for Jason Ott Tri 3
 
 ## Time Box
 
+### Week 3 - [Review Ticket](https://github.com/JasonO12/jasonott-csp3/issues/13)
+
+- [Algorithmic Video Final](https://www.youtube.com/watch?v=bkxK3a6aICA) 
+
 ### Week 2 - [Review Ticket](https://github.com/JasonO12/jasonott-csp3/issues/8)
 
 - [TT2 Classy Functions](https://replit.com/@JasonOtt1/jasonott-csp3#python/menu.py) 
