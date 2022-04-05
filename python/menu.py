@@ -4,7 +4,7 @@
 from week0 import keypad, swap, pattern, tree, animation
 from week1 import listsandloops, fibonacci, factorial
 from week2 import oopfib, ooppalindrome, oopfact, oopgcd, impgcd
-
+import createtask
 
 # Main list of [Prompts, Actions]
 # Two styles are supported to execute abstracted logic
@@ -41,6 +41,9 @@ oop_sub_menu = [
     ["OOP GCD", oopgcd.gcd_tester]
 ]
 
+ct_sub_menu = [
+  ["Create Task", createtask.marblefunc]
+]
 patterns_sub_menu = [
     
 ]
@@ -63,6 +66,7 @@ def menu():
     menu_list.append(["Visual", visual_submenu])
     menu_list.append(["Data", data_submenu])
     menu_list.append(["OOP", oop_submenu])
+    menu_list.append(["Create Task", ct_submenu])
     buildMenu(title, menu_list)
 # def submenu
 # using sub menu list above:
@@ -87,7 +91,11 @@ def data_submenu():
 
 def oop_submenu():
     title = "OOP Submenu" + banner
-    buildMenu(title, oop_sub_menu)  
+    buildMenu(title, oop_sub_menu)
+
+def ct_submenu():
+    title = "Create Task Submenu" + banner
+    buildMenu(title, ct_sub_menu)
 
 
 

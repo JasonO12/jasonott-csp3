@@ -16,7 +16,8 @@ class GCD:
 
 def gcd_tester():
   a = 342
-  b = 114
+  b = 1140
+  
   gcd_of = GCD()
   print("GCD of", a, "and", b, "is", gcd_of(a, b))
   
