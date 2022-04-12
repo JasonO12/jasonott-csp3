@@ -11,6 +11,7 @@ import createtask
 # 1. file names will be run by exec(open("filename.py").read())
 # 2. function references will be executed directly file.function()
 main_menu = [
+  ["Create Task", createtask.gamefunc]
 ]
 
 # Submenu list of [Prompt, Action]
@@ -41,9 +42,6 @@ oop_sub_menu = [
     ["OOP GCD", oopgcd.gcd_tester]
 ]
 
-ct_sub_menu = [
-  ["Create Task", createtask.marblefunc]
-]
 patterns_sub_menu = [
     
 ]
@@ -66,7 +64,6 @@ def menu():
     menu_list.append(["Visual", visual_submenu])
     menu_list.append(["Data", data_submenu])
     menu_list.append(["OOP", oop_submenu])
-    menu_list.append(["Create Task", ct_submenu])
     buildMenu(title, menu_list)
 # def submenu
 # using sub menu list above:
@@ -93,9 +90,6 @@ def oop_submenu():
     title = "OOP Submenu" + banner
     buildMenu(title, oop_sub_menu)
 
-def ct_submenu():
-    title = "Create Task Submenu" + banner
-    buildMenu(title, ct_sub_menu)
 
 
 
