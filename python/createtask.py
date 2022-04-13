@@ -1,10 +1,13 @@
 import random
 import time
+import os
+
+
 
 # function that has the player guess a number 1-10 each time the game is played. global choice can be referenced.
 def rowTest():
   global choice
-  choice = int(input("Enter Your Number of Marbles: ")) 
+  choice = int(input("Enter Your Number of Marbles (1-10): ")) 
   if 0 < choice <= 10:
     return(choice)
   else:
@@ -21,27 +24,51 @@ def aimarblefunc():
   
 
 guessList = ["Odd", "Even"]
-scoreList = []
+pscoreList = []
+cscoreList = []
+
+
+
+def aiguessfunc():
+  global aiguess
+  aiguess = random.randint(1,2)
+
+
+def endfunc():
+   end = input("Play again? (yes/no):").lower()
+   if end == 'yes':
+     gamefunc()
+   elif end == 'no':
+     os.system("clear")
+     return
+   else:
+     print("Please type yes or no.")
+     endfunc()
+
 
 
 def gamefunc():
-  print("=" * 20)
+  os.system("clear")
+  
+  print("=" * 30, "\nYour Score:", len(pscoreList), "\nComputer's Score:", len(cscoreList))
+  print("=" * 30)
   rowTest()
   
   print("...")
   time.sleep(0.75)
   
-  print("The Computer has selected.")
+  print("The Computer has selected a number of marbles.")
   
   print("...")
   time.sleep(0.75)
   
-  guess = input("Will you guess odd or even?").lower()
+  guess = input("Do you think the computer chose an even or odd number of numbers?").lower()
   
   print("...")
   time.sleep(0.75)
   
-  print("The Computer has guessed.")
+  print("The Computer has guessed even or odd.")
+  aiguessfunc()
   
   print("...")
   time.sleep(0.75)
@@ -66,15 +93,35 @@ def gamefunc():
   if guess == 'odd' and value % 2 != 0 or guess == 'even' and value % 2 == 0:
     print("You Guessed Correctly!")
     # adds the number to the defined list if you guess right, so the length of that list can be analyzed to determine your score.
-    scoreList.append(value)
+    pscoreList.append(value)
   else:
     print("You Guessed Incorrectly!")
+
+  print("...")
+  time.sleep(0.75)
+  
+  # computer guess function same as player guess function
+  if aiguess == 1:
+    print("The Computer's guess was:", guessList[0])
+  else:
+    print("The Computer's guess was:", guessList[1])
+
+
+  # this determines if computer guessed right or not.
+  if aiguess == 1 and choice % 2 != 0 or aiguess == 2 and choice % 2 == 0:
+    print("The Computer Guessed Correctly!")
+    # adds the number to the defined list if you guess right, so the length of that list can be analyzed to determine your score.
+    cscoreList.append(value)
+  else:
+    print("The Computer Guessed Incorrectly!")
+
+  print("...")
+  time.sleep(0.75)
+
+  endfunc()
 
 
 if __name__ == "__main__":
     gamefunc()
 
 # find potential while loops
-# implement scoring system at the top
-# make a banner that displays score that doesnt go away
-# find out how to clear the game
