@@ -2,8 +2,6 @@ import random
 import time
 import os
 
-
-
 # function that has the player guess a number 1-10 each time the game is played. global choice can be referenced.
 def rowTest():
   global choice
@@ -21,18 +19,24 @@ def aimarblefunc():
   global value
   value = random.randint(1, 10)
   return(value)
-  
 
-guessList = ["Odd", "Even"]
 pscoreList = []
 cscoreList = []
-
-
+ppastList = []
+cpastList = []
 
 def aiguessfunc():
   global aiguess
   aiguess = random.randint(1,2)
 
+def guessanalyze():
+  global guess
+  guess = input("Do you think the computer chose an even or odd number of numbers?").lower()
+  if guess == 'odd' or guess == 'even':
+    return
+  else: 
+    print("Please type either odd or even.")
+    guessanalyze()
 
 def endfunc():
    end = input("Play again? (yes/no):").lower()
@@ -45,13 +49,27 @@ def endfunc():
      print("Please type yes or no.")
      endfunc()
 
+def ppast():
+  print("Your Past Inputs:")
+  for item in ppastList:
+    print(item, end=", ")
 
+def cpast():
+  print("Computer's Past Inputs:")
+  for item in cpastList:
+    print(item, end=", ")
 
 def gamefunc():
   os.system("clear")
   
   print("=" * 30, "\nYour Score:", len(pscoreList), "\nComputer's Score:", len(cscoreList))
   print("=" * 30)
+  ppast()
+  print("")
+  cpast()
+  print("")
+  print("=" * 30)
+  
   rowTest()
   
   print("...")
@@ -61,8 +79,8 @@ def gamefunc():
   
   print("...")
   time.sleep(0.75)
-  
-  guess = input("Do you think the computer chose an even or odd number of numbers?").lower()
+
+  guessanalyze()
   
   print("...")
   time.sleep(0.75)
@@ -81,19 +99,17 @@ def gamefunc():
   print("...")
   time.sleep(1.5)
 
-  # restates the players original guess
   if guess == 'odd':
-    print("Your guess was:", guessList[0])
-  elif guess == 'even':
-    print("Your guess was:", guessList[1])
+    print("Your guess was: Odd")
   else:
-    print("Please type either odd or even.")
+    print("Your guess was: Even")
+
 
   # this determines if you guessed right or not.
   if guess == 'odd' and value % 2 != 0 or guess == 'even' and value % 2 == 0:
     print("You Guessed Correctly!")
     # adds the number to the defined list if you guess right, so the length of that list can be analyzed to determine your score.
-    pscoreList.append(value)
+    pscoreList.append(choice)
   else:
     print("You Guessed Incorrectly!")
 
@@ -102,10 +118,9 @@ def gamefunc():
   
   # computer guess function same as player guess function
   if aiguess == 1:
-    print("The Computer's guess was:", guessList[0])
+    print("The Computer's guess was: Odd")
   else:
-    print("The Computer's guess was:", guessList[1])
-
+    print("The Computer's guess was: Even")
 
   # this determines if computer guessed right or not.
   if aiguess == 1 and choice % 2 != 0 or aiguess == 2 and choice % 2 == 0:
@@ -118,10 +133,11 @@ def gamefunc():
   print("...")
   time.sleep(0.75)
 
-  endfunc()
+  ppastList.append(choice)
+  cpastList.append(value)
 
+  endfunc()
 
 if __name__ == "__main__":
     gamefunc()
 
-# find potential while loops
