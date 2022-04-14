@@ -20,15 +20,18 @@ def aimarblefunc():
   value = random.randint(1, 10)
   return(value)
 
+# defines player/computer lists for score and past guesses. values are added to the list after each round of the game.
 pscoreList = []
 cscoreList = []
 ppastList = []
 cpastList = []
 
+# function for the computer's guessing of odd or even.
 def aiguessfunc():
   global aiguess
   aiguess = random.randint(1,2)
 
+# function for analyzing the players guess of odd or even. asks the player to try again if they type anything other than odd or even. 
 def guessanalyze():
   global guess
   guess = input("Do you think the computer chose an even or odd number of numbers?").lower()
@@ -38,6 +41,7 @@ def guessanalyze():
     print("Please type either odd or even.")
     guessanalyze()
 
+# function to end the round and clear the board.
 def endfunc():
    end = input("Play again? (yes/no):").lower()
    if end == 'yes':
@@ -49,16 +53,19 @@ def endfunc():
      print("Please type yes or no.")
      endfunc()
 
+# function that lists past player guesses at the top banner.
 def ppast():
   print("Your Past Inputs:")
   for item in ppastList:
     print(item, end=", ")
 
+# function that lists past computer guesses at the top banner.
 def cpast():
   print("Computer's Past Inputs:")
   for item in cpastList:
     print(item, end=", ")
 
+# runs the game.
 def gamefunc():
   os.system("clear")
   
