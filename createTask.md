@@ -54,30 +54,24 @@ if aiguess == 1 and choice % 2 != 0 or aiguess == 2 and choice % 2 == 0:
 - Items in the lists being used:
 
 ``` python
-# function that lists past player guesses at the top banner.
-def ppast():
-  print("Your Past Inputs:")
-  for item in ppastList:
-    print(item, end=", ")
-
-# function that lists past computer guesses at the top banner.
-def cpast():
-  print("Computer's Past Inputs:")
-  for item in cpastList:
-    print(item, end=", ")
+# runs the game.
+def gamefunc():
+  os.system("clear")
+  
+  print("=" * 30, "\nYour Score:", len(pscoreList), "\nComputer's Score:", len(cscoreList))
 ```
  
 #### 3b iii.
 
-- 
+- The names of the lists in this response are pscoreList and cscoreList, representing the player's score list and the computer's score list.
 
 #### 3b iv.
 
-- 
+- The data that is appended to these lists are the past guesses of the player and the computer, but they are only appended when a point is awarded. Each item in the list represents a point for the player/computer.
 
 #### 3b v.
 
-- 
+- These lists are essential for the tallying of the points for the player and the computer after each round of the game. As the score is determined by analyzing the length of each list, the game would cease to have a working scoreboard without them, and would therefore be less interesting. Without the use of these lists, the player would have to keep score manually or not at all, or the code may be potentially rewritten using conditionals. 
 
 #### 3c i.
 
