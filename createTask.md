@@ -28,25 +28,14 @@ Type '1' in this menu to view my create task program.
 
 #### 3b i.
 
-- Lists are defined and empty, and if the player/computer is right, their guess is added to their respective list:
+- Lists are defined and empty, and after the player and computer input a number of marbles, the input is added to their respective list:
 
 ``` python
-pscoreList = []
-cscoreList = []
+ppastList = []
+cpastList = []
 
-if guess == 'odd' and value % 2 != 0 or guess == 'even' and value % 2 == 0:
-    print("You Guessed Correctly!")
-    # adds the number to the defined list if you guess right, so the length of that list can be analyzed to determine your score.
-    pscoreList.append(choice)
-  else:
-    print("You Guessed Incorrectly!")
-
-if aiguess == 1 and choice % 2 != 0 or aiguess == 2 and choice % 2 == 0:
-    print("The Computer Guessed Correctly!")
-    # adds the number to the defined list if you guess right, so the length of that list can be analyzed to determine your score.
-    cscoreList.append(value)
-  else:
-    print("The Computer Guessed Incorrectly!")
+ppastList.append(choice)
+cpastList.append(value)
 ```
 
 #### 3b ii.
@@ -54,32 +43,62 @@ if aiguess == 1 and choice % 2 != 0 or aiguess == 2 and choice % 2 == 0:
 - Items in the lists being used:
 
 ``` python
-# runs the game.
-def gamefunc():
-  os.system("clear")
-  
-  print("=" * 30, "\nYour Score:", len(pscoreList), "\nComputer's Score:", len(cscoreList))
+# function that lists past player guesses at the top banner.
+def ppast():
+  print("Your Past Inputs:")
+  for item in ppastList:
+    print(item, end=", ")
+
+# function that lists past computer guesses at the top banner.
+def cpast():
+  print("Computer's Past Inputs:")
+  for item in cpastList:
+    print(item, end=", ")
 ```
  
 #### 3b iii.
 
-- The names of the lists in this response are pscoreList and cscoreList, representing the player's score list and the computer's score list.
+- The names of the lists in this response are ppastList and cpastList (player past input list and computer past input list).
 
 #### 3b iv.
 
-- The data that is appended to these lists are the past guesses of the player and the computer, but they are only appended when a point is awarded. Each item in the list represents a point for the player/computer.
+- The data that is appended to these lists are the past guesses of the player and the computer, and they aree added after each round. Each item in the list represents a previous marble input from the player/computer. 
 
 #### 3b v.
 
-- These lists are essential for the tallying of the points for the player and the computer after each round of the game. As the score is determined by analyzing the length of each list, the game would cease to have a working scoreboard without them, and would therefore be less interesting. Without the use of these lists, the player would have to keep score manually or not at all, or the code may be potentially rewritten using conditionals. 
+- These lists are essential for the displaying of the past inputs from the player and the computer after each round of the game. The list is necessary to print out all of the inputs from players, and since the player and computer will choose a variety of different numbers, the best way to store the numbers would be by appending them to an empty list. Without the use of these lists, the player would have to keep track of past inputs manually or not at all, or the code may be potentially rewritten using conditionals. The use of lists in this scenario will prove to be the most effective.
 
 #### 3c i.
 
-- 
+- Function that ends the round.
+
+``` python
+# function to end the round and clear the board.
+def endfunc():
+   end = input("Play again? (yes/no):").lower()
+   if end == 'yes':
+     gamefunc()
+   elif end == 'no':
+     os.system("clear")
+     return
+   else:
+     print("Please type yes or no.")
+     endfunc()
+```
 
 #### 3c ii.
 
-- 
+- endfunc() is called at the end of gamefunc(), the main game. 
+
+``` python
+  print("...")
+  time.sleep(0.75)
+
+  ppastList.append(choice)
+  cpastList.append(value)
+
+  endfunc()
+```
 
 #### 3c iii.
 
