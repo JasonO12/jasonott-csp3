@@ -8,8 +8,40 @@ My plan is to make a marbles game where a player plays against a computer. The p
 
 ## Runtime
 
+Type '1' in this menu to view my create task program.
+
 {% include replitembed.html %}
 
-## Code
+## Written Response
+
+#### 3a i.
+
+#### 3a ii.
+
+#### 3a iii. 
+
+#### 3b i.
+
+#### 3b ii.
+ 
+#### 3b iii.
+
+#### 3b iv.
+
+#### 3b v.
+
+#### 3c i.
+
+#### 3c ii.
+
+#### 3c iii.
+
+#### 3c iv.
+
+#### 3d i.
+
+#### 3d ii.
+
+#### 3d iii.
 
 
