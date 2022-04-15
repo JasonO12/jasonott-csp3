@@ -28,11 +28,44 @@ Type '1' in this menu to view my create task program.
 
 #### 3b i.
 
-- 
+- Lists are defined and empty, and if the player/computer is right, their guess is added to their respective list:
+
+``` python
+pscoreList = []
+cscoreList = []
+
+if guess == 'odd' and value % 2 != 0 or guess == 'even' and value % 2 == 0:
+    print("You Guessed Correctly!")
+    # adds the number to the defined list if you guess right, so the length of that list can be analyzed to determine your score.
+    pscoreList.append(choice)
+  else:
+    print("You Guessed Incorrectly!")
+
+if aiguess == 1 and choice % 2 != 0 or aiguess == 2 and choice % 2 == 0:
+    print("The Computer Guessed Correctly!")
+    # adds the number to the defined list if you guess right, so the length of that list can be analyzed to determine your score.
+    cscoreList.append(value)
+  else:
+    print("The Computer Guessed Incorrectly!")
+```
 
 #### 3b ii.
  
-- 
+- Items in the lists being used:
+
+``` python
+# function that lists past player guesses at the top banner.
+def ppast():
+  print("Your Past Inputs:")
+  for item in ppastList:
+    print(item, end=", ")
+
+# function that lists past computer guesses at the top banner.
+def cpast():
+  print("Computer's Past Inputs:")
+  for item in cpastList:
+    print(item, end=", ")
+```
  
 #### 3b iii.
 
