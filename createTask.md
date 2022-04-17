@@ -12,6 +12,10 @@ Type '1' in this menu to view my create task program.
 
 {% include replitembed.html %}
 
+## Video - [Link](https://www.youtube.com/watch?v=6kwxaIS7nes)
+
+{% include createtaskvid.html %}
+
 ## Written Response
 
 #### 3a i.
@@ -20,11 +24,11 @@ Type '1' in this menu to view my create task program.
 
 #### 3a ii.
 
-- 
+- The video represents the game running off of user input, displaying a number of marbles, and the program setting up a computer for the player to face off against. The video also shows the functioning scoreboard, lists of past player inputs, and list of past computer-generated inputs. Finally, the video shows the game being able to be replayed again and again if the player wishes, updating scoreboards and other lists after each round.
 
 #### 3a iii. 
 
-- 
+- The inputs displayed in the video are the player inputting a number of marbles (1-10), then the guess of the player (odd/even), and finally the option for the player to play again (yes/no). The outputs are the scoreboard updating depending on if the player/computer score a point, as well as the three lists that represent the past inputs of the player and computer. 
 
 #### 3b i.
 
