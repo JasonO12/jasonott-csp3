@@ -48,3 +48,43 @@ In this situation, the metadata can be processed to provide all phone numbers th
 By converting the red, green, and blue values in each pixel into a single number, information has been lost that cannot be restored. A lossless transformation would be creating the negative reverse of each pixel color, as no data is lost.
 
 
+## Proctored Quiz 2
+![image](https://user-images.githubusercontent.com/89180255/164544848-14241cd1-14fc-4a8a-8aba-9fec5731973f.png)
+
+
+#### Question 1 - Ability of parallel solution to improve efficiency
+- My answer: B
+- Correct answer: D
+
+The efficiency of a solution that can be broken down into parallel portions is still limited by a sequential portion. Improvement in efficiency is not limitless.
+
+#### Question 
+- My answer: 
+- Correct answer:
+
+#### Question 
+- My answer: 
+- Correct answer:
+
+#### Question 
+- My answer: 
+- Correct answer:
+
+#### Question 
+- My answer: 
+- Correct answer:
+
+#### Question 
+- My answer: 
+- Correct answer:
+
+#### Question 
+- My answer: 
+- Correct answer:
+
+#### Question 
+- My answer: 
+- Correct answer:
+
+
+
