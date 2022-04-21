@@ -4,7 +4,7 @@
 
 ## Week 6
 
-- [CB Practice Quizzes]() with corrections
+- [CB Practice Quizzes](https://JasonO12.github.io/jasonott-csp3/notes/cbquiz) with corrections
 
 ## Week 2
 
