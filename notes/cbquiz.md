@@ -58,33 +58,47 @@ By converting the red, green, and blue values in each pixel into a single number
 
 The efficiency of a solution that can be broken down into parallel portions is still limited by a sequential portion. Improvement in efficiency is not limitless.
 
-#### Question 
-- My answer: 
-- Correct answer:
+#### Question 3 - Action that raises legal or ethical concerns
+- My answer: D
+- Correct answer: C
 
-#### Question 
-- My answer: 
-- Correct answer:
+The use of material created by someone else without permission raises ethical concerns and can have legal consequences. Using a Creative Commons license to publish a derived work does not free the musician from having to first obtain permission.
 
-#### Question 
-- My answer: 
-- Correct answer:
+#### Question 8 - Advantages of open source software 
+- My answer: D
+- Correct answer: C
 
-#### Question 
-- My answer: 
-- Correct answer:
+Open-source software can be continually updated without the original developers once it becomes available to the public.
 
-#### Question 
-- My answer: 
-- Correct answer:
+#### Question 25 - Benefit of RunRoutr 
+- My answer: B
+- Correct answer: C
 
-#### Question 
-- My answer: 
-- Correct answer:
+The application can be used to connect users with other nearby users, which may encourage users to exercise together. This may have the effect of improving user health. The application only sends notifications to compatible users who are nearby. Since not all people will be considered compatible, users are unlikely to be able to identify all other users in the area.
 
-#### Question 
-- My answer: 
-- Correct answer:
+#### Question 27 - Benefits of incremental and iterative development 
+- My answer: A
+- Correct answer: D
+
+Unsolvable problems cannot be solved with an algorithm. Incrementally adding code segments to correct, working programs can help programmers identify new errors that are introduced.
+
+#### Question 36 - Cause of video play count error 
+- My answer: D
+- Correct answer: A
+
+When the value of the count exceeded the maximum value that can be represented by a fixed number of bits, the count overflowed and wrapped around to a negative number.
+
+#### Question 38 - Challenge in analyzing data from many counties
+- My answer: D
+- Correct answer: B
+
+It will be a challenge to clean the data from the different counties to make the data uniform. The way pollution data is captured and organized may vary significantly from county to county.
+
+#### Question 40 - Citizen science for wildlife research 
+- My answer: B
+- Correct answer: D
+
+Citizen science involves members of the general public participating in scientific research. Distributing the image analysis work to a larger group of individuals allows the work to be completed in less time.
 
 
 
