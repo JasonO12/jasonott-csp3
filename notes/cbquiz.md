@@ -1,4 +1,4 @@
-# Week 6/7 CollegeBoard Quiz Scores/Corrections
+# Week 5/6 CollegeBoard Quiz Scores/Corrections
 
 ## Proctored Quiz 1 
 ![image](https://user-images.githubusercontent.com/89180255/164309105-117bd547-8feb-4a7e-946f-78ad211f7676.png)
