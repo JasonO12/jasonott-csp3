@@ -1,4 +1,4 @@
-# Week 6 CollegeBoard Quiz Scores/Corrections
+# Week 6/7 CollegeBoard Quiz Scores/Corrections
 
 ## Proctored Quiz 1 
 ![image](https://user-images.githubusercontent.com/89180255/164309105-117bd547-8feb-4a7e-946f-78ad211f7676.png)
@@ -99,6 +99,48 @@ It will be a challenge to clean the data from the different counties to make the
 - Correct answer: D
 
 Citizen science involves members of the general public participating in scientific research. Distributing the image analysis work to a larger group of individuals allows the work to be completed in less time.
+
+
+## Proctored Quiz 3
+![image](https://user-images.githubusercontent.com/89180255/165443403-4877b2da-1359-4d87-b171-26634dc8042c.png)
+
+#### Question 12 - Creative Commons
+- My answer: B
+- Correct answer: A
+
+Creative Commons gives creators of digital content the ability to indicate how their works can be legally used and distributed, enabling broad access to digital information. Not all previously copyrighted work can be distributed with the Creative Commons license, only ones that were published with this license. 
+
+#### Question 18 - Test cases for allPositive in a list
+- My answer: D
+- Correct answer: C
+
+The following procedure will return the value 'true' as soon as it encounters a number in the list that is positive. If the number in the list is not positive, then the procedure returns 'false'. The program is suposed to return 'true' when all elements in a list are greater than zero. When testing ```[1, 2, 3]```, The program will return 'true' in all cases, which is thre intended output. When testing ```[-1, 0, 1]```, however, the program will return 'true' when it encounters the 1 on the final iteration, which causes 'true' to be returned. Not every number in the list is positive, so 'true' is not the intended output.
+
+#### Question 30 - Relationship between Internet and World Wide Web 
+- My answer: C
+- Correct answer: D
+
+The Internet is a network of interconnected networks, and the World Wide Web is a system of linked pages, programs, and files that is accessed via the Internet. The World Wide Web is not a global network, it must be accessed via the Internet. 
+
+#### Question 34 - Algorithm that would most benefit from a heuristic
+- My answer: C
+- Correct answer: B
+
+A heuristic approach is when a problem is solved using a sufficient method that may not be optimal or efficient, but works in the end. Some examples are trial and error or making an educated guess. Finding a fast route testing n! possible routes is very inefficient as factorial functions will not run in a reasonable amount of time. In this situation, a heuristic approach can be used.
+
+#### Question 38 - Consequence of using Creative Commons 
+- My answer: D
+- Correct answer: B
+
+A Creative Commons license with no rights reserved allows the public to freely use the contents of the e-book or works under that license. People are not legally prevented from using content in other works, they are in fact allowed to do what they want with no further permission from the author. 
+
+#### Question 41 - Encrypting and decrypting using public key cryptography 
+- My answer: B
+- Correct answer: D
+
+In public cryptography, a message is encrypted with a recipient’s public key and decrypted with the recipient’s private key. The sender's private key is not used for deccryption. 
+
+
 
 
 
