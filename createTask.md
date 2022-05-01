@@ -84,7 +84,8 @@ def userResponseFunc(input1):
   elif input1 == 'search':
     found = False
     term = input("Which term do you want to search for? ").lower()
-    # Loops through the list, searching for the term that the user had just inputted. If the term is somewhere in the list, True is returned. 
+    # Loops through the list, searching for the term that the user had just inputted. 
+    # If the term is somewhere in the list, True is returned.
     for i in range(len(sportList)):
       list = sportList[i]
       if list.lower() == term:
