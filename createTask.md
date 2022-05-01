@@ -1,4 +1,4 @@
-{% include navbar.html %}
+{% include navbar.html %} 
 
 # Create Task Outline
 
