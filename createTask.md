@@ -26,7 +26,7 @@ My plan is to make a program that allows users to search for terms in a list, ad
 
 #### 3a iii. 
 
-- The inputs displayed in the video are the user typing 'all', 'add' + item they want to add, 'search' + term they want to search for, and 'clear'. The output for 'all' is the printed list, the output for 'search' is a prompt asking what they want to search for and then responding with yes or no depending if the item is in the list or not, and the output for 'add' is a prompt asking what term the uer wants to add. The output for 'clear' is the termination of the system.
+- The inputs displayed in the video are the user typing 'all', 'add' + item they want to add, 'search' + term they want to search for, and 'clear'. The output for 'all' is the printed list, the output for 'search' is a prompt asking what they want to search for and then responding with yes or no depending if the item is in the list or not, and the output for 'add' is a prompt asking what term the user wants to add. The output for 'clear' is the termination of the system.
 
 #### 3b i.
 
@@ -45,7 +45,8 @@ sportList = ["Baseball", "Basketball", "Football", "Soccer", "Hockey", "Tennis"]
 ```
 
 ``` python      
-# Loops through the list, searching for the term that the user had just inputted. If the term is somewhere in the list, True is returned. 
+# Loops through the list, searching for the term that the user had just inputted. 
+# If the term is somewhere in the list, True is returned. 
     for i in range(len(sportList)):
       list = sportList[i]
       if list.lower() == term:
