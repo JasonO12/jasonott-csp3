@@ -4,7 +4,7 @@
 
 ## Plan
 
-My plan is to make a marbles game where a player plays against a computer. The player and the computer will each select a number of marbles 1-10, and they will then each guess if the other selected an even or odd number of marbles. If the player is right, they get a point displayed on a scoreboard at the top of the page. The same applies for the computer. The past inputs for number of marbles for both the player and computer are also listed at the top of the page using lists that get values appended to them. 
+My plan is to make a program that allows users to search for terms in a list, add terms to a list, and display the whole list if they dedsire. There will be a defined list that contains multiple sports, and the user can interact with this list after bring prompted by the computer. 
 
 ## Runtime
 
@@ -20,113 +20,133 @@ Type '1' in this menu to view my create task program.
 
 #### 3a i.
 
-- The overall purpose of the program is to create a game where a player will face a computer. A player will input a number of marbles, and the computer will also select a number of marbles. The player will then guess if the computer chose an odd or even number of marbles, as will the computer. If the player is right, they get a point, and if the computer is right, it gets a point. The scoreboard is displayed at the top of the page, as are lists of past inputs from the player and computer. 
+- The overall purpose of the program is to create am environment where a user can interact with a list that contains various names of sports in it. The user can add items to the list, display the hole list, or search for a term in the list. They can also decide to clear the data they previously added if they wish. The user interface contains a section at the top of the screen that outlines the basic idea of the program, as well as directions for how to use it.
 
 #### 3a ii.
 
-- The video represents the game running off of user input, displaying a number of marbles, and the program setting up a computer for the player to face off against. The video also shows the functioning scoreboard, lists of past player inputs, and list of past computer-generated inputs. Finally, the video shows the game being able to be replayed again and again if the player wishes, updating scoreboards and other lists after each round.
+- The video shows the program running differently based on different user inputs. The user is able to add items, display, and search for items in the list. The video also shows the termination of the program, clearing the data. 
 
 #### 3a iii. 
 
-- The inputs displayed in the video are the player inputting a number of marbles (1-10), then the guess of the player (odd/even), and finally the option for the player to play again (yes/no). The outputs are the scoreboard updating depending on if the player/computer score a point, as well as the three lists that represent the past inputs of the player and computer. 
+- The inputs displayed in the video are the user typing 'all', 'add' + item they want to add, 'search' + term they want to search for, and 'clear'. The output for 'all' is the printed list, the output for 'search' is a prompt asking what they want to search for and then responding with yes or no depending if the item is in the list or not, and the output for 'add' is a prompt asking what term the uer wants to add. The output for 'clear' is the termination of the system.
 
 #### 3b i.
 
-- Lists are defined and empty, and after the player and computer input a number of marbles, the input is added to their respective list:
-
 ``` python
-ppastList = []
-cpastList = []
-
-ppastList.append(choice)
-cpastList.append(cvalue)
+# Preset list of sports
+sportList = ["Baseball", "Basketball", "Football", "Soccer", "Hockey", "Tennis"]
 ```
 
 #### 3b ii.
- 
-- Items in the lists being used:
 
 ``` python
-# function that lists past player inputs at the top banner.
-def ppast(n):
-  iteration = range(n)
-  for n in iteration:
-    print(ppastList[n], end=", ")
+# Parameter that prints out the whole list
+  if input1 == 'all':
+    for item in sportList:
+      print(item, end=", ")
+```
 
-# function that lists past computer inputs at the top banner.
-def cpast():
-  print("Computer's Past Inputs:")
-  for item in cpastList:
-    print(item, end=", ")
+``` python      
+# Loops through the list, searching for the term that the user had just inputted. If the term is somewhere in the list, True is returned. 
+    for i in range(len(sportList)):
+      list = sportList[i]
+      if list.lower() == term:
+        found = True
+    # Gives the user feedback
+    if found == True:
+      print("Yes, this item is in the list.")
+    else:
+      print("No, this item is not in the list.")
 ```
  
 #### 3b iii.
 
-- The names of the lists in this response are ```ppastList``` and ```cpastList``` (player past input list and computer past input list).
+- The name of the list in this response is ```sportList```
 
 #### 3b iv.
 
-- The data that is appended to these lists are the past guesses of the player and the computer, and they aree added after each round. Each item in the list represents a previous marble input from the player/computer. 
+- The data that is in the list represents various names of sports, and any other items that the user may decide to add to the list. These terms are in place so that a user can interact with them through searching for a sport, or adding more sports to the list. 
 
 #### 3b v.
 
-- These lists are essential for the displaying of the past inputs from the player and the computer after each round of the game. The list is necessary to print out all of the inputs from players, and since the player and computer will choose a variety of different numbers, the best way to store the numbers would be by appending them to an empty list. Without the use of these lists, the player would have to keep track of past inputs manually or not at all, or the code may be potentially rewritten using conditionals. The use of lists in this scenario will prove to be the most effective.
+- This list is essential for the overall functionality of the program. Using the list, users are easily able to work with the data that it contains. For example, adding items to the list is easy using the ```.append``` function, and containing the data in a list allows the user to easily search for a term: the program simply has to iterate through the list, identifying if the inputted term is there or not. Without using lists, users would not be able to search for a term as there would be no place for the program to search. With no list, users would manually have to keep track of the listed sports, and search for terms manually.
 
 #### 3c i.
 
 - Function for past player inputs.
 
 ``` python
-# function that lists past player inputs at the top banner.
-def ppast(n):
-  iteration = range(n)
-  for n in iteration:
-    print(ppastList[n], end=", ")
+# Main function that does seperate things based on user input 
+def userResponseFunc(input1):
+  # Parameter that prints out the whole list
+  if input1 == 'all':
+    for item in sportList:
+      print(item, end=", ")
+    print(" ")
+  # Parameter that runs the search function for a user to search for a specific term in the list
+  elif input1 == 'search':
+    found = False
+    term = input("Which term do you want to search for? ").lower()
+    # Loops through the list, searching for the term that the user had just inputted. If the term is somewhere in the list, True is returned. 
+    for i in range(len(sportList)):
+      list = sportList[i]
+      if list.lower() == term:
+        found = True
+    # Gives the user feedback
+    if found == True:
+      print("Yes, this item is in the list.")
+    else:
+      print("No, this item is not in the list.")
+  # Parameter that allows the user to add their own terms to the list
+  elif input1 == 'add':
+    addition = input("What do you want to add to the list? ")
+    sportList.append(addition)
+    print(addition + " has been added to the list.")
+  # Parameter that clears the data and kills the process, removing all appended terms. Exits the system.
+  elif input1 == 'clear':
+    print("Clearing Data...")
+    time.sleep(1)
+    sys.exit()
+  # If the user did not input a valid word, then they are prompted again.
+  else:
+    print("Invalid input.")
 ```
 
 #### 3c ii.
 
--  Calls the ```ppast``` function after displaying the scoreboard at the top of the page.
-
 ``` python
-  print("=" * 30, "\nYour Score:", len(pscoreList), "\nComputer's Score:", len(cscoreList))
-  print("=" * 30)
-  print("Your Past Inputs (Full):")
-  ppast(n)
-  print("", "\nYour Past Inputs (Shortened):")
-  ppast(round(n / 2))
+ def runtime():
+  input1 = input("\nWhat would you like to do? ").lower()
+  print("=" * 60)
+  userResponseFunc(input1)
+  print("=" * 60)
+  
+  runtime()
 ```
 
 #### 3c iii.
 
-- The procedure uses ```n``` as a way to analyze the length of ```ppastList```, and this is done to print out the items in the list that represent the past inputs of the player.
+- The procedure analyzes the text input that the user gives after being showsn a list of valid words that they can input, and what each input will allow them to do. Depending on the input, the procedure will show the full list of sports, allow a user to add items to the list, allow the user to search for a term in the list, or clear the data and terminate the process.
 
 #### 3c iv.
 
-- First, the variable ```n``` is assigned to the length of ```ppastList```, the list containing the past inputs of players. Then, ```iteration``` is set as the range of n, and then a for loop is run: for n in iteration, print ```n``` values of ```ppastList```. The numbers in the list are separaed by commas when printed for a more visually appealing look.
+- First, if the user typed 'all' when prompted, the procedure will use a for loop to print out every item in ```sportList```, each item separated by a comma. Then, if the user typed 'search' when prompted, the procedure will run a basic search function. In this search function, the variable ```found``` is set to False, and the user is asked what term they would like to search for. Then, the items in ```sportList``` are looped through, and if an item in the list matches the term the user wanted to search for, the variable ```found``` is set to true. If not, ```found``` remains False. If ```found``` is True, then the procedure tells the user that the item is in the list, and if ```found``` is False, the procedure tells the user that the item is not in the list. Then, if the user typed 'add' when prompted, the procedure asks the user what they want to add to the list and adds it. Finally
 
 #### 3d i.
 
 - First call:
 
-``` python
-print("Your Past Inputs (Full):")
-  ppast(n)
-```
 
 - Second call:
 
-``` python
-print("", "\nYour Past Inputs (Shortened):")
-  ppast(round(n / 2))
-```
+
 
 #### 3d ii.
 
-- In the first call, the condition being tested is just ```ppast(n)```, where the parameter is ```n```. ```n``` represents the length of ```ppastList```, so this call will display the full list of past inputs. In the second call, the condition being tested is ```ppast(round(n / 2))```, where the parameter is ```round(n / 2)```. Since ```n``` will not always be even, ```n / 2``` will not always yield a whole number, so the round function is necessary. This call will display a list of player inputs that is roughly half as long as normal.
+- 
 
 #### 3d iii.
 
-- The result of the first call is the whole list of past inputs from the player being printed at the top of the page, on a single line and separated by commas. The result of the second call is the same list of past player inputs but only about half as long, as the parameter shortens the length. This is also printed out on a single line separated by commas, and is displayed at the top of the page under the full list of past player inputs.
+- 
 
 
