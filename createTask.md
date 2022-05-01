@@ -8,11 +8,9 @@ My plan is to make a program that allows users to search for terms in a list, ad
 
 ## Runtime
 
-Type '1' in this menu to view my create task program.
+{% include ctembed.html %}
 
-{% include replitembed.html %}
-
-## Video - [Link](https://www.youtube.com/watch?v=6kwxaIS7nes)
+## Video - [Link](https://www.youtube.com/watch?v=dhhnhoF1I18)
 
 {% include createtaskvid.html %}
 
@@ -20,7 +18,7 @@ Type '1' in this menu to view my create task program.
 
 #### 3a i.
 
-- The overall purpose of the program is to create am environment where a user can interact with a list that contains various names of sports in it. The user can add items to the list, display the hole list, or search for a term in the list. They can also decide to clear the data they previously added if they wish. The user interface contains a section at the top of the screen that outlines the basic idea of the program, as well as directions for how to use it.
+- The overall purpose of the program is to create an environment where a user can interact with a list that contains various names of sports in it. The user can add items to the list, display the whole list, or search for a term in the list. They can also decide to clear the data they previously added if they wish. The user interface contains a section at the top of the screen that outlines the basic idea of the program, as well as directions for how to use it.
 
 #### 3a ii.
 
@@ -72,8 +70,6 @@ sportList = ["Baseball", "Basketball", "Football", "Soccer", "Hockey", "Tennis"]
 - This list is essential for the overall functionality of the program. Using the list, users are easily able to work with the data that it contains. For example, adding items to the list is easy using the ```.append``` function, and containing the data in a list allows the user to easily search for a term: the program simply has to iterate through the list, identifying if the inputted term is there or not. Without using lists, users would not be able to search for a term as there would be no place for the program to search. With no list, users would manually have to keep track of the listed sports, and search for terms manually.
 
 #### 3c i.
-
-- Function for past player inputs.
 
 ``` python
 # Main function that does seperate things based on user input 
