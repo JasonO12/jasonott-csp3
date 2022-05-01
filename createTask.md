@@ -130,23 +130,24 @@ def userResponseFunc(input1):
 
 #### 3c iv.
 
-- First, if the user typed 'all' when prompted, the procedure will use a for loop to print out every item in ```sportList```, each item separated by a comma. Then, if the user typed 'search' when prompted, the procedure will run a basic search function. In this search function, the variable ```found``` is set to False, and the user is asked what term they would like to search for. Then, the items in ```sportList``` are looped through, and if an item in the list matches the term the user wanted to search for, the variable ```found``` is set to true. If not, ```found``` remains False. If ```found``` is True, then the procedure tells the user that the item is in the list, and if ```found``` is False, the procedure tells the user that the item is not in the list. Then, if the user typed 'add' when prompted, the procedure asks the user what they want to add to the list and adds it. Finally
+- First, if the user typed 'all' when prompted, the procedure will use a for loop to print out every item in ```sportList```, each item separated by a comma. Then, if the user typed 'search' when prompted, the procedure will run a basic search function. In this search function, the variable ```found``` is set to False, and the user is asked what term they would like to search for. Then, the items in ```sportList``` are looped through, and if an item in the list matches the term the user wanted to search for, the variable ```found``` is set to true. If not, ```found``` remains False. If ```found``` is True, then the procedure tells the user that the item is in the list, and if ```found``` is False, the procedure tells the user that the item is not in the list. Then, if the user typed 'add' when prompted, the procedure asks the user what they want to add to the list and adds it. Finally, if the user typed 'clear' when prompted, the procedure will terminate the process. If the user did not type any valid words when prompted, then nothing will happen and they will be prompted again.
 
 #### 3d i.
 
-- First call:
+- First call: One call to the procedure ```userResponseFunc``` is if the parameter ```input1``` is 'all', which will execute a section of the procedure that prints the entirety of the existing list.
 
-
-- Second call:
-
-
+- Second call: Another call to the procedure ```userResponseFunc``` is if the parameter ```input1``` is 'search', which will execute a section of the procedure that allows the user to search for a term in the list and tell them if that item exists in the list or not.
 
 #### 3d ii.
 
-- 
+- Conditions tested by first call: Tests if ```input1``` is equal to the string 'all'
+
+- Conditions tested by second call: Tests if ```input1``` is equal to the string 'search'
 
 #### 3d iii.
 
-- 
+- Result of first call: When ```input1``` = 'all', the procedure will print the entirety of ```sportList```, including any items that were appended by the user.
+
+- Result of seconf call: When ```input1``` = 'search', the procedure will ask the user which term they want to search for, and then will output "Yes, this item is in the list." or "No, this item is not in the list." depending if that item was found in the lsit or not.
 
 
