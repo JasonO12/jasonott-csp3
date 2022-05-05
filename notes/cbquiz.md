@@ -140,6 +140,22 @@ A Creative Commons license with no rights reserved allows the public to freely u
 
 In public cryptography, a message is encrypted with a recipient’s public key and decrypted with the recipient’s private key. The sender's private key is not used for deccryption. 
 
+## Proctored Quiz 5
+![image](https://user-images.githubusercontent.com/89180255/167017606-729c6cfc-10e2-480d-bfe2-b2a39e9f729c.png)
+
+### Question 43 - True statement about the Internet 
+- My answer: A
+- Correct answer: B
+
+Proprietary communication protocols relates to a closed communication system. The internet uses open, non-proprietary communication protocols. It is also designed to be scalable for an increasing number of users, and uses open protocols to easily connect additional computing devices to the network.
+
+### Question 49 - Condition when C is assigned to grade
+- My answer: B 
+- Correct answer: C
+
+This was a relatively stupid error. In the code, when the variable ```presentation``` is set to 80, an earlier segment will execute that makes the grade B. When ```presentation``` is 60, this earlier segment will not execute, and the grade will be C.
+
+
 
 
 
