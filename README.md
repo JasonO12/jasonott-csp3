@@ -21,6 +21,14 @@ Repository for Jason Ott Tri 3
 
 ## Time Box
 
+### Week 7 - [Review Ticket](https://github.com/JasonO12/jasonott-csp3/issues/19)
+
+### Week 6 - [Review Ticket](https://github.com/JasonO12/jasonott-csp3/issues/17)
+
+### Week 5 - [Review Ticket](https://github.com/JasonO12/jasonott-csp3/issues/15)
+
+### Week 4 - [Review Ticket](https://github.com/JasonO12/jasonott-csp3/issues/14)
+
 ### Week 3 - [Review Ticket](https://github.com/JasonO12/jasonott-csp3/issues/13)
 
 - [Algorithmic Video Final](https://www.youtube.com/watch?v=bkxK3a6aICA) 
