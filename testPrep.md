@@ -2,9 +2,10 @@
 
 # Test Prep
 
-## Week 5/6
+## Week 5/6/7
 
 - [CB Practice Quizzes](https://JasonO12.github.io/jasonott-csp3/notes/cbquiz) with corrections
+- [Study Plans](https://JasonO12.github.io/jasonott-csp3/notes/study)
 
 ## Week 2
 
